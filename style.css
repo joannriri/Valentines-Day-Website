@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Asset/Backdrop.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    overflow-x: hidden;
+}
+
+.mail-text {
+    position: absolute;
+    top: 0px;       
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Great Vibes', cursive;
+    color: #EFBF04;
+    font-size: 70px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+/* Closed mail */
+.mail {
+    position: relative;
+}
+
+.mail-img {
+    width: 1500px;  
+}
+
+.wax {
+    position: absolute;
+    bottom: 250px;   
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;   
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.wax:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+
+/* Open Letter */
+.letter {
+    display: none;
+    position: relative;
+}
+
+.open-img {
+    width: 1500px; 
+}
+
+
+.paper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    width: 550px;
+    height: 650px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    transition: transform 1.4s ease;
+    display: flex;              
+    flex-direction: column; 
+    overflow: hidden;
+}
+
+.paper.show {
+    transform: translateX(-50%) translateY(-120px);
+}
+
+
+.paper-content {
+    height: 100%;
+    padding: 40px;
+    overflow-y: auto;  
+}
+
+.continue-btn {
+    display: none; /* hidden initially */
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-family: 'Georgia', serif;
+    background-color: #EFBF04;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #d6a800;
+    transform: scale(1.05);
+}
+
+
+
+
